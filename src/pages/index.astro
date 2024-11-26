@@ -6,14 +6,30 @@ import Badge from "../components/Badge.astro";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1 class="text-white">
-      Hey, soy Jhonatan <Badge>Disponible para trabajar</Badge>
-    </h1>
-    <h2>
-      +2 años de experiecia, Desarrollador web y Diseño. De Medellin, Colombia
-      🇨🇴. especializado en crear aplicaciones únicas.
-    </h2>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full w-12 h-12 mb-5"
+        src="/images/foto.jpg"
+        alt="tu foto"
+      />
 
-    <ul></ul>
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hey, soy Jhonatan
+        <a
+          href="https://www.linkedin.com/in/jhonatan-villamizar-046385148/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl opacity-80">
+        +2 años de experiecia, Desarrollador web y Diseño. De Medellin, Colombia
+        🇨🇴. especializado en crear aplicaciones únicas.
+      </h2>
+
+      <ul></ul>
+    </section>
   </main>
 </Layout>
