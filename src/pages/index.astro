@@ -1,22 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import GithubIcon from "../icons/Github.astro";
+import LinkedinIcon from "../icons/Linkedin.astro";
+import SocialPill from "../icons/SocialPill.astro";
+import MailIcon from "../icons/Mail.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout
+  title="Porfolio Jhonatan Villamizar - Desarrollador y programador Web con 2 años de experiencia"
+  description="Contrata a Jhonatan Villamizar para crear tu aplicación web o móvil. Desarrollador web especaializado en crear aplicaciones únicas"
+>
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
       <img
-        class="rounded-full w-12 h-12 mb-5"
+        class="rounded-full w-14 h-14 mb-5"
         src="/images/foto.jpg"
         alt="tu foto"
       />
 
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-9">
         Hey, soy Jhonatan
         <a
-          href="https://www.linkedin.com/in/jhonatan-villamizar-046385148/"
+          href="https://www.linkedin.com/in/jhonatan-villamizar-046385148"
           target="_blank"
           rel="noopener"
           class="flex justify-center items-center"
@@ -24,12 +30,32 @@ import Badge from "../components/Badge.astro";
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-xl opacity-80">
-        +2 años de experiecia, Desarrollador web y Diseño. De Medellin, Colombia
-        🇨🇴. especializado en crear aplicaciones únicas.
+
+      <h2 class="text-2xl opacity-80">
+        <span>+2 años de experiecia, </span>
+        <span class="text-yellow-200/90">Desarrollador web y Diseño UI. </span>
+        <span class="text-red-200/90">De Medellin, Colombia. </span>
+        <span class="text-blue-200/90 opacity-75"
+          >Especializado en crear aplicaciones web únicas y funcionales.</span
+        >
       </h2>
 
-      <ul></ul>
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill
+          href="https://www.linkedin.com/in/jhonatan-villamizar-046385148"
+        >
+          <LinkedinIcon class="h-6 w-6" />
+          Linkedin
+        </SocialPill>
+        <SocialPill href="https://github.com/jhonatanvillamizar">
+          <GithubIcon class="h-6 w-6" />
+          Github
+        </SocialPill>
+        <SocialPill>
+          <MailIcon class="h-6 w-6" />
+          jhonatan.avj@gmail.com
+        </SocialPill>
+      </nav>
     </section>
   </main>
 </Layout>
